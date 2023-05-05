@@ -7,8 +7,6 @@
     <title>Scroll Project</title>
     <!-- General Styles -->
     <link rel="stylesheet" href="./style.css" />
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="./assets/css-reset.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,13 +24,16 @@
     <!-- header nav-bar -->
     <header>
       <!-- logo -->
-      <img src="./assets/img/logo1.svg" alt="logo" id="logo" />
+      <div class="logo-wrapper">
+        <img src="./assets/img/logo1.svg" alt="logo" id="logo" />
+        <i class="fa-solid fa-bars burger-icon"></i>
+      </div>
       <!-- navbar -->
-      <ul id="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#tours">Tours</a></li>
+      <ul id="navbar" class="hide">
+        <li><a class="navbar-link" href="#">Home</a></li>
+        <li><a class="navbar-link" href="#about">About</a></li>
+        <li><a class="navbar-link" href="#services">Services</a></li>
+        <li><a class="navbar-link" href="#tours">Tours</a></li>
       </ul>
     </header>
     <!-- home section -->
@@ -60,7 +61,7 @@
       <h2 class="subtitle">Featured <span class="highlight">Tours</span></h2>
     </section>
 
-      <a href="#home" id="home-button"><i class="fa-solid fa-house"></i></a>
+    <a href="#home" id="home-button"><i class="fa-solid fa-house"></i></a>
 
     <footer>
       <p class="footer-text">
