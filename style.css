@@ -5,8 +5,12 @@
 
 :root {
   --mobile-width: 375px;
-  --desktop-width: 1440px;
+  --desktop-width: 100vw;
   --main-font: "Poppins", sans-serif;
+  --dark-color1: #000;
+  --neutral-color1: #ccc;
+  --accent-color1: #27e1c1;
+  --transparent-accent: rgba(39, 225, 193, 0.4);
 }
 
 body {
@@ -24,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: transparent !important;
-  min-width: 375px;
+  min-width: var(--mobile-width);
 }
 
 #logo {
@@ -43,7 +47,6 @@ header {
 
 ul {
   text-align: center;
-  /* padding: 1rem 0; */
 }
 
 li {
@@ -70,3 +73,32 @@ h1 {
   min-width: 100%;
   display: block;
 }
+
+#home {
+  background-image: url(./assets/img/background1.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px var(--transparent-accent);
+  color: #fff;
+}
+
+#explore {
+    text-transform: uppercase;
+    margin: 0.5rem 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #fff; 
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
