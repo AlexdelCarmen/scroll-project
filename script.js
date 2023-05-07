@@ -5,8 +5,15 @@ menuButton.addEventListener("click", () => {
   navbar.classList.toggle("hide");
 });
 
-var scrollY = window.scrollY;
+
 const homeButton = document.getElementById("home-button");
 const header = document.querySelector("header");
 
-console.log(header);
+window.addEventListener("scroll", () => {
+  var scrollY = window.scrollY;
+  if (scrollY > 80) {
+    homeButton.classList.remove("hide-button");
+  } else {
+    homeButton.classList.add("hide-button");
+  }
+});

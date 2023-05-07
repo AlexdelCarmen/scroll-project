@@ -60,7 +60,6 @@ ul {
 
 li {
   list-style-type: none;
-  padding: 0.3rem 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -87,6 +86,13 @@ h1 {
 .navbar-link {
   min-width: 100%;
   display: block;
+  transition: background-color 250ms ease-in-out;
+  padding: 0.3rem 0;
+
+}
+
+.navbar-link:hover {
+  background-color: var(--transparent-accent);  
 }
 
 #home {
@@ -135,4 +141,19 @@ section {
   color: #fff;
   padding: 0.5rem;
   border-radius: 5px;
+  box-shadow: -10px 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+#about, #tours{
+  background-color: #eee;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.hide-button {
+  display: none;
 }
