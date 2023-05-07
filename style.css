@@ -146,7 +146,7 @@ section {
 
 #about, #tours{
   background-color: #eee;
-  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
@@ -156,4 +156,10 @@ h1, h2 {
 
 .hide-button {
   display: none;
+}
+
+.sticky-bar {
+  position: fixed;
+  background-color: white;
+  top: 0;
 }
