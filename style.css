@@ -81,6 +81,7 @@ h1 {
 #navbar {
   max-height: 700px;
   transition: max-height 250ms ease-in;
+  box-shadow: 0 1px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-link {
@@ -88,11 +89,10 @@ h1 {
   display: block;
   transition: background-color 250ms ease-in-out;
   padding: 0.3rem 0;
-
 }
 
 .navbar-link:hover {
-  background-color: var(--transparent-accent);  
+  background-color: var(--transparent-accent);
 }
 
 #home {
@@ -136,20 +136,23 @@ section {
 #home-button {
   position: fixed;
   bottom: 5%;
-  align-self: flex-end; 
+  align-self: flex-end;
   background-color: #27e1c1;
   color: #fff;
   padding: 0.5rem;
   border-radius: 5px;
   box-shadow: -10px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  right: 2%;
 }
 
-#about, #tours{
+#about,
+#tours {
   background-color: #eee;
   box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
+h1,
+h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -162,4 +165,80 @@ h1, h2 {
   position: fixed;
   background-color: white;
   top: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: var(--desktop-width);
+  }
+
+  .logo-wrapper {
+    min-width: unset;
+  }
+
+  .burger-icon {
+    display: none !important;
+  }
+
+  .hide {
+    max-height: 700px !important;
+  }
+
+  header {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+  }
+
+  #home {
+    padding-top: 10%;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none !important;
+    align-items: end;
+    justify-content: space-evenly;
+    min-width: 35vw;
+    padding-bottom: 25px;
+  }
+
+  .subtitle {
+    padding-top: 7%;
+  }
+
+  section {
+    min-height: 100svh;
+  }
+
+  .sticky-bar {
+    position: sticky;
+    color: #000;
+    font-weight: unset;
+  }
+
+  .navbar-link {
+    min-width: 10svw;
+  }
+
+  li {
+    border-bottom: none;
+  }
+
+  .paragraph {
+    padding: 5% 30%;
+  }
+
+  #logo {
+    width: 25%;
+  }
 }
