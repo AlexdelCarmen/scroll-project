@@ -18,3 +18,8 @@ window.addEventListener("scroll", () => {
     homeButton.classList.add("hide-button");
   }
 });
+
+const year = document.getElementById("year");
+var currentYear = new Date().getFullYear();
+
+year.textContent = currentYear.toString();
